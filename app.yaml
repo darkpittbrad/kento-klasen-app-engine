@@ -2,13 +2,23 @@ runtime: php74
 
 handlers:
 - url: /
-  static_files: www/juansimulator.html
-  upload: www/juansimulator.html
-  secure: always
+ static_files: www/hg.html
+  upload: www/hg.html
+  secure: always 
+
+- url: /hg
+ static_files: www/hg.html
+ upload: www/hg.html
+ secure: always 
 
 - url: /juansimulator.js
   static_files: www/juansimulator.js
   upload: www/juansimulator.js
+  secure: always
+
+- url: /hg.js
+  static_files: www/hg.js
+  upload: www/hg.js
   secure: always
 
 - url: /juansimulator
